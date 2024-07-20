@@ -1,0 +1,42 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parking Monitoring System</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://th.bing.com/th/id/R.de2c2395dfe90d4f3d2e103ecb760e73?rik=e5ArA%2f%2fWHa27fw&riu=http%3a%2f%2fmytraffic.com.my%2fimages%2fParking-icon-01.png&ehk=9hEjANXFsA0EI2jOxZKh2t%2fimjeJ%2b%2bCOrE92%2f13U%2f4Y%3d&risl=&pid=ImgRaw&r=0"
+      type="image/x-icon"
+    />
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz2wfN4Yw4WwwAOXu01HmVwEB8DmotfA8"></script>
+  </head>
+  <body>
+    <div id="user-info" class="user-info">
+      <img id="user-icon" class="user-icon" src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" alt="User Icon" />
+      <div id="user-details" class="user-details">
+        <span id="username" class="username"></span>
+        <hr class="divider">
+        <a href="wallet.html">
+          <span id="wallet-balance" class="wallet-balance"><b>Balance: 0</b></span>
+      </a>
+    </div>
+    </div>
+    <div id="container">
+      <div id="parking-list"></div>
+
+      <div id="map"></div>
+      <input
+        type="text"
+        id="search-bar"
+        placeholder="Search for a parking lot..."
+      />
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <script src="script1.js"></script>
+  </body>
+</html>

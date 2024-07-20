@@ -1,0 +1,136 @@
+/* style.css */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.user-info {
+  position: absolute;
+  top: 20px;
+  right: 10%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it's above the map */
+}
+.user-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+a
+{
+  text-decoration: none;
+  color: black;
+}
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  margin: 5px 0;
+}
+.user-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.username {
+  font-size: 16px;
+  font-weight: bold;
+}
+h1 {
+  color: #444;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+#parking-slots {
+  display: grid;
+  grid-template-columns: repeat(5, 70px);
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.parking-slot {
+  width: 90px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e0e0;
+  border: 2px solid #b0b0b0;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.parking-slot:hover {
+  background-color: #d0d0d0;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+form > label {
+  margin-right: 10px;
+}
+
+#license-plate {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 200px;
+}
+
+#park-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#park-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+#available-slots {
+  font-size: 18px;
+  color: #333;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.parking-slot[data-occupied="true"] {
+  background-color: green;
+}

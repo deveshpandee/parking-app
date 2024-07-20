@@ -1,0 +1,160 @@
+/* css file */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  /* display: flex; */
+}
+
+.user-info {
+  position: absolute;
+  top: 20px;
+  right: 10%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it's above the map */
+}
+.user-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+a
+{
+  text-decoration: none;
+  color: black;
+}
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  margin: 5px 0;
+}
+.user-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.username {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#container {
+  display: flex;
+  height: 100vh;
+}
+
+#map {
+  width: 80%;
+  height: 100%;
+}
+
+#search-bar {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 300px;
+  padding: 10px;
+  z-index: 5; /* Ensure it appears above the map */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+.gm-style .gm-style-iw-c{
+  
+  font-weight: bolder;
+  background: none;
+  color: black;
+  
+}
+#parking-list {
+  width: 25%;
+  overflow-y: auto;
+  padding: 10px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#parking-list div {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+#route-info {
+  padding: 10px;
+  background: #fff;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#sidebar {
+  width: 300px;
+  height: 100vh;
+  overflow-y: auto;
+  border-right: 1px solid #ddd;
+  padding: 10px;
+}
+
+#map {
+  flex-grow: 1;
+  height: 100vh;
+}
+
+.parking-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.parking-item:hover {
+  background-color: #f0f0f0;
+}
+
+.parking-item strong {
+  font-size: 1em; /* Increase font size for name */
+  color: #333;
+  padding: 0px 10px;
+}
+
+.parking-item p {
+  font-size: 0.9em; /* Reduce font size for other details */
+  color: #555; /* Change color for other details */
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  padding: 0px 10px;
+}
+
+.parking-item {
+  position: relative;
+}
+
+.directions-icon {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  right: 4px; /* Adjust this value as needed */
+  font-size: 40px;
+}
+
+.parking-icon {
+  position: absolute;
+  top: calc(
+    40% + 24px
+  ); /* Position the parking icon 24px below the directions icon */
+  right: 4px; /* Align the parking icon with the directions icon */
+  font-size: 40px;
+}
